@@ -162,7 +162,7 @@ static unsigned int g_limited_max_ncpu;
 static unsigned int g_limited_max_freq;
 static unsigned int g_limited_min_freq;
 static unsigned int g_cpufreq_get_ptp_level = 0;
-static unsigned int g_max_freq_by_ptp = DVFS_F0; /* default 1.3GHz */
+static unsigned int g_max_freq_by_ptp = DVFS_F0_3; /* default 1.3GHz */
 #if defined(CONFIG_THERMAL_LIMIT_TEST)
 static unsigned int g_limited_load_for_thermal_test = 0;
 static unsigned int g_limited_max_thermal_power;
