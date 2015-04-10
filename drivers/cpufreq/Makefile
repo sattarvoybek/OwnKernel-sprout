@@ -12,6 +12,17 @@ obj-$(CONFIG_CPU_FREQ_GOV_INTERACTIVEPLUS) += cpufreq_interactiveplus.o
 obj-$(CONFIG_CPU_FREQ_GOV_CONSERVATIVE)	+= cpufreq_conservative.o
 obj-$(CONFIG_CPU_FREQ_GOV_INTERACTIVE)	+= cpufreq_interactive.o
 obj-$(CONFIG_CPU_FREQ_GOV_HOTPLUG)	+= cpufreq_hotplug.o
+obj-$(CONFIG_CPU_FREQ_GOV_ABYSSPLUG)	 += cpufreq_abyssplug.o
+obj-$(CONFIG_CPU_FREQ_GOV_ABYSSPLUG)	 += cpufreq_abyssplugv2.o
+obj-$(CONFIG_CPU_FREQ_GOV_OWNDEMAND)  += cpufreq_owndemand.o
+obj-$(CONFIG_CPU_FREQ_GOV_DANCEDANCE)    += cpufreq_dancedance.o
+obj-$(CONFIG_CPU_FREQ_GOV_LIONHEART)     += cpufreq_lionheart.o
+obj-$(CONFIG_CPU_FREQ_GOV_SMARTMAX)      += cpufreq_smartmax.o
+obj-$(CONFIG_CPU_FREQ_GOV_SMARTASS2)     += cpufreq_smartass2.o
+obj-$(CONFIG_CPU_FREQ_GOV_PEGASUSQ)	 += cpufreq_pegasusq.o
+obj-$(CONFIG_CPU_FREQ_GOV_INTELLIACTIVE) += cpufreq_intelliactive.o
+obj-$(CONFIG_CPU_FREQ_GOV_INTELLIMM)     += cpufreq_intellimm.o
+obj-$(CONFIG_CPU_FREQ_GOV_YANKACTIVE)    += cpufreq_yankactive.o
 obj-$(CONFIG_CPU_FREQ_GOV_COMMON)		+= cpufreq_governor.o
 
 # CPUfreq cross-arch helpers
