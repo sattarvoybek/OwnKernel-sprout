@@ -37,7 +37,7 @@ compile_kernel ()
 echo -e "$blue***********************************************"
 echo "          Compiling OwnKernel         "
 echo -e "***********************************************$nocol"
-make ownrom_sprout_defconfig
+make ownkernel_sprout_defconfig
 make -j8
 if ! [ -a $ZIMAGE ];
 then
