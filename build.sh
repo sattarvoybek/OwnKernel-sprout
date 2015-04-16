@@ -37,7 +37,7 @@ compile_kernel ()
 echo -e "$blue***********************************************"
 echo "          Compiling OwnKernel         "
 echo -e "***********************************************$nocol"
-make ownkernel_sprout_defconfig menuconfig
+make ownkernel_sprout_defconfig mrproper clean
 make -j4
 if ! [ -a $ZIMAGE ];
 then
