@@ -41,14 +41,17 @@ config IOSCHED_ROW
 	  manner when the dispatch quantum for each queue is calculated
 	  according to queue priority.
 	  Most suitable for mobile devices.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+config IOSCHED_ROW
+	tristate "ROW I/O scheduler"
+	default y
+	---help---
+	  The ROW I/O scheduler gives priority to READ requests over the
+	  WRITE requests when dispatching, without starving WRITE requests.
+	  Requests are kept in priority queues. Dispatching is done in a RR
+	  manner when the dispatch quantum for each queue is calculated
+	  according to queue priority.
+	  Most suitable for mobile devices.
 
->>>>>>> 3b00f57... Add ROW IO scheduler.
-=======
-
->>>>>>> 3b00f57... Add ROW IO scheduler.
 config IOSCHED_CFQ
 	tristate "CFQ I/O scheduler"
 	default y
@@ -81,25 +84,9 @@ choice
 
 	config DEFAULT_ROW
 		bool "ROW" if IOSCHED_ROW=y
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 	config DEFAULT_SIO
 		bool "SIO" if IOSCHED_SIO=y
-=======
-=======
->>>>>>> 3b00f57... Add ROW IO scheduler.
-		help
-		  The ROW I/O scheduler gives priority to READ requests
-		  over the WRITE requests when dispatching, without starving
-		  WRITE requests. Requests are kept in priority queues.
-		  Dispatching is done in a RR manner when the dispatch quantum
-		  for each queue is defined according to queue priority.
-		  Most suitable for mobile devices.
-<<<<<<< HEAD
->>>>>>> 3b00f57... Add ROW IO scheduler.
-=======
->>>>>>> 3b00f57... Add ROW IO scheduler.
 
 	config DEFAULT_CFQ
 		bool "CFQ" if IOSCHED_CFQ=y

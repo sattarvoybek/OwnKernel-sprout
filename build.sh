@@ -37,8 +37,8 @@ compile_kernel ()
 echo -e "$blue***********************************************"
 echo "          Compiling OwnKernel         "
 echo -e "***********************************************$nocol"
-make ownkernel_sprout_defconfig
-make -j8
+make ownkernel_sprout_defconfig menuconfig
+make -j4
 if ! [ -a $ZIMAGE ];
 then
 echo -e "$red Kernel Compilation failed! Fix the errors! $nocol"
