@@ -27,7 +27,7 @@ nocol='\033[0m'
 # Modify the following variable if you want to build
 export ARCH=arm
 export SUBARCH=arm
-export CROSS_COMPILE="/home/akhil/OwnROM/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8/bin/arm-linux-androideabi-"
+export CROSS_COMPILE="/home/akhil/RR/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi-"
 export KBUILD_BUILD_USER="akhilnarang"
 export KBUILD_BUILD_HOST="idonthaveahostname"
 
@@ -38,7 +38,7 @@ echo -e "$blue***********************************************"
 echo "          Compiling OwnKernel         "
 echo -e "***********************************************$nocol"
 make ownkernel_sprout_defconfig
-make -j4
+make -j8
 if ! [ -a $ZIMAGE ];
 then
 echo -e "$red Kernel Compilation failed! Fix the errors! $nocol"
